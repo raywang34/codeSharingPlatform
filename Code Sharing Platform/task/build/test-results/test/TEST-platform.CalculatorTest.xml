@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="platform.CalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-13T15:57:13" hostname="DESKTOP-VJNJU6J" time="0.07">
+<testsuite name="platform.CalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-03-19T04:52:39" hostname="DESKTOP-VJNJU6J" time="0.047">
   <properties/>
-  <testcase name="subtract()" classname="platform.CalculatorTest" time="0.036"/>
-  <testcase name="divide()" classname="platform.CalculatorTest" time="0.009"/>
-  <testcase name="Add 1 and 2, result should be 3" classname="platform.CalculatorTest" time="0.017"/>
-  <testcase name="Multiply 2 and 3, result should be 6" classname="platform.CalculatorTest" time="0.002"/>
+  <testcase name="subtract()" classname="platform.CalculatorTest" time="0.033"/>
+  <testcase name="divide()" classname="platform.CalculatorTest" time="0.001"/>
+  <testcase name="Add 1 and 2, result should be 3" classname="platform.CalculatorTest" time="0.007"/>
+  <testcase name="Multiply 2 and 3, result should be 6" classname="platform.CalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
