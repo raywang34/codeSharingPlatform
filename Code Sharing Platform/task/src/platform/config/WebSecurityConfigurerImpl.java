@@ -27,7 +27,7 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .mvcMatchers("/test").hasAnyRole("USER")
-                .mvcMatchers("/code/new").hasRole("ADMIN")
+                .mvcMatchers("/code/new").hasRole("USER")
                 .mvcMatchers("/api/code/latest").hasAnyRole("ADMIN", "USER")
                 .mvcMatchers("/code/**").permitAll()
                 .mvcMatchers("/register").permitAll()
@@ -48,6 +48,10 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
 
         auth
                 .inMemoryAuthentication()
+                .withUser("A").password("pass1").roles()
+                .and()
+                .withUser("B").password("pass2").roles()
+                .and()
                 .withUser("Admin").password("hardcoded").roles("USER")
                 .and()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance());

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
 
 @Entity
@@ -16,6 +17,7 @@ public class CodeInfo {
     @Column
     private String id;
 
+    @NotEmpty(message = "程式碼不能為空")
     @Column
     private String code;
 

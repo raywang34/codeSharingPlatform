@@ -985,6 +985,9 @@ files:
 - name: src/platform/service/UserDetailsServiceImpl.java
   visible: true
   learner_created: true
+- name: src/platform/controller/ItemsController.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/11031#comment
 status: Solved
 feedback:

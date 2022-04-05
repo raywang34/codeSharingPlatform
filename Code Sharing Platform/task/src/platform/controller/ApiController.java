@@ -7,6 +7,7 @@ import org.springframework.web.server.ResponseStatusException;
 import platform.model.CodeInfo;
 import platform.service.CodeInfoService;
 
+import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +36,7 @@ public class ApiController {
     }
 
     @PostMapping("/api/code/new")
-    public Map<String, String> postCodeInfo(@RequestBody CodeInfo codeInfo) {
+    public Map<String, String> postCodeInfo(/*@Valid*/ @RequestBody CodeInfo codeInfo) {
 
         String id = UUID.randomUUID().toString();
 
